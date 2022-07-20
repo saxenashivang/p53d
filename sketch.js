@@ -28,13 +28,13 @@ function draw() {
     noStroke();
     rect(0, 0, 200, 200);
     angle += 0.1;
-    // if (frameCount === 1) {
-    //   const capture = P5Capture.getInstance();
-    //   capture.start({
-    //     format: "gif",
-    //     duration: 100,
-    //   });
-    // }
+    if (frameCount === 1) {
+      const capture = P5Capture.getInstance();
+      capture.start({
+        format: "gif",
+        duration: 100,
+      });
+    }
   }
   if (method == '2d') {
     if (img != undefined) {
